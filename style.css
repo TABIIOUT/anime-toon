@@ -1,0 +1,169 @@
+body{
+  margin: 0;
+}
+
+.header{
+  background-color: #050a23;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.logo{
+  width: 70px;
+  border-radius: 50px;
+}
+
+.header-links a{
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.header-links a:hover{
+  background-color: #10227a;
+}
+
+.btn{
+  background-color: #8d1214;
+  border-radius: 15px;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+}
+
+.btn:hover{
+  background-color: #d11b3b;
+}
+
+.page-1{
+  background-color: #050a23;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  color: white;
+  border-radius: 0 0 50px 50px;
+}
+
+.page-1{
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+.imgb6{
+  width: 250px;
+  border-radius: 25px;
+}
+
+.search input{
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.search button{
+  position: absolute;
+  height: 30px;
+  left: 200px;
+}
+
+.page-left{
+  width: 500px;
+}
+
+.contener{
+  padding: 20px 30px;
+}
+
+.contener span{
+  color:red;
+  text-transform: uppercase;
+}
+
+.trendingHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trendingHeader h1 {
+  margin: 2px ;
+}
+
+.card{
+  width:220px;
+  background-color: #860000;
+  border-radius: 25px;
+}
+
+.cards{
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  cursor: grab;
+}
+
+.card .amgs{
+  border-radius: 25px 25px 0 0;
+  width: 220px;
+}
+
+.card{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card .amgs{
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.inf{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+
+.inf img{
+  width: 50px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px){
+
+  .page-1{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-left{
+    width: 100%;
+  }
+
+  .cards{
+    overflow-x: auto;
+  }
+
+  .card{
+    min-width: 220px;
+  }
+
+  .header{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
